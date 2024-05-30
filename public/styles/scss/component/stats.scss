@@ -1,0 +1,67 @@
+.stats{
+    padding-top: 100px;
+    .chart{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .side{
+            width: 49%;
+            height: fit-content;
+        }
+        #chart2{
+            padding: 0 100px 200px 100px;
+        }
+        h3{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+    .donnee{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .side{
+            width: 49%;
+        }
+        .decroissant{
+            .items-row-title{
+                div{
+                    background-color: $color;
+                    h6{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .items-row-title , .items-row{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                div{
+                    display: flex;
+                    align-items: center;
+                    padding: 0 5px;
+                    margin: 1px;
+                }
+                .item{
+                    width: 40%;
+                }
+                .montant{
+                    width: 19%;
+                }
+            }
+            .items-row{
+                background-color: white;
+                color: black;
+                margin: 1px;
+            }
+        }
+        .cout{
+            .item{
+                width: 25%;
+            }
+        }
+        
+    }
+}

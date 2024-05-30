@@ -1,0 +1,402 @@
+.nouveau{
+    padding-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    .sidenav{
+        width: 20%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+
+        a{
+            width: 100%;
+            margin-top: 10px;
+            button{
+                width: 100%;
+            }
+        }
+        .lien-active{
+            background: transparent;
+        }
+    }
+    .content{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 30px 0;
+        .nouveau-details{
+            width: 39%;
+            padding: 0 20px;
+            h2{
+                color: $color;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+        form{
+            width: 60%;
+            .error-list{
+                color: $color;
+                width: 100%;
+                .item{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .nouveau-form{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                button{
+                    margin-top: 20px;
+                }
+                input{
+                    width: 60%;
+                    border: none;
+                    background: transparent;
+                    border-radius: 0;
+                    border-bottom: 2px solid white;
+                    margin: 10px 0;
+                    color: white;
+                    padding: 4px 10px;
+                }
+                input:focus{
+                    border-color: $color;
+                    outline: none;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.clients{
+    padding-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    .sidenav{
+        width: 20%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        a{
+            width: 100%;
+            margin-top: 10px;
+            button{
+                width: 100%;
+            }
+        }
+        .lien-active{
+            background: transparent;
+        }
+    }
+    .content{
+        width: 80%;
+        .clients-text{
+            color: $color;
+            text-align: center;
+            font-weight: bold;
+        }
+        .clients-barre{
+            padding: 0 ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            form{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 95%;
+                input{
+                    width: 95%;
+                    border: none;
+                    background: transparent;
+                    border-radius: 0;
+                    border-bottom: 2px solid white;
+                    margin: 10px 0;
+                    color: white;
+                    padding: 4px 10px;
+                }
+                input:focus{
+                    border-color: $color;
+                    outline: none;
+                    text-decoration: none;
+                }
+            }
+        }
+        .clients-items{
+            padding: 20px 0;
+            .not-found{
+                text-align: center;
+            }
+            .item{
+                margin: 2px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $color;
+                padding: 5px 20px;
+                background: white;
+                border-radius: 10px;
+                .item-buttons{
+                    display: flex;
+                    a{
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                    button{
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 5px;
+                }}
+            }
+        }
+    }
+}
+
+.reparations{
+    padding-top: 100px;
+    min-height: 100vh;
+    .reparations-title{
+        display: flex;
+        span{
+            color: $color;
+            font-weight: bold;
+        }
+        .total{
+            margin-left: 8px;
+            padding : 4px 8px;
+            border-radius : 100px;
+            background-color: #11b532;
+            color: white;
+            font-weight: bold;
+        }
+    }
+    .reparations-box{
+        display: flex;
+        justify-content: space-between;
+        form{
+            width: 25%;
+            padding: 10px;
+            h4{
+                margin-bottom: 20px;
+                text-align: center;
+                color: $color;
+            }
+            button{
+                width: 100%;
+                margin-top: 10px;
+            }
+            input{
+                width: 100%;
+                border: none;
+                background: transparent;
+                border-radius: 0;
+                border-bottom: 2px solid white;
+                margin: 12px 0;
+                color: white;
+                padding: 4px 10px;
+            }
+            input:focus{
+                border-color: $color;
+                outline: none;
+                text-decoration: none;
+            }
+        }
+        .reparations-items{
+            margin: 20px 0;
+            width: 75%;
+           .total{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+                .total-prix{
+
+                }
+                .print{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    select{
+                        border: none;
+                        background: transparent;
+                        border-radius: 0;
+                        border-bottom: 2px solid white;
+                        margin: 12px 0;
+                        color: white;
+                        padding: 4px 10px;
+                        option{
+                            color: black;
+                        }
+                    }
+                }
+           }
+            .barre{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                .filtre{
+                    width: 95%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    input{
+                        width : 20%;
+                    }
+                    button{
+                        width: fit-content;
+                    }
+                }
+                a , .voir{
+                    margin-top: 10px;
+                }
+            }
+            
+            .items-row-title{
+                div{
+                    background-color: $color;
+                    h6{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .items-row-title , .items-row{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                div{
+                    display: flex;
+                    align-items: center;
+                    padding: 1px 5px;
+                    margin: 1px;
+                }
+                .item{
+                    width: 12%;
+                }
+                .libelle{
+                    width: 39%;
+                }
+            }
+            .items-row{
+                background-color: white;
+                color: black;
+                margin: 1px;
+                button{
+                    padding: 2px 4px;
+                    margin: 0 4px ;
+                }
+            }
+        }
+    }
+    
+}
+
+.facture{
+    width: 100%;
+    min-height: 100vh;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .facture-box{
+        color: black;
+        width: 80%;
+        min-height: 80%;
+        background: white;
+        padding: 20px;
+        .imprimer{
+            .head{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h1 {
+                    color: $color;
+                    font-weight: bold;
+                }
+            }
+            .descri{
+                h5{
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .tableau{
+                margin: 20px 0;
+                .items-row-title{
+                    border-top: 1px solid;
+                    div{
+                        h6{
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .items-row-title , .items-row{
+                    border-bottom: 1px solid;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    div{
+                        display: flex;
+                        align-items: center;
+                        padding: 1px 5px;
+                        margin: 1px;
+                    }
+                    .item{
+                        width: 15%;
+                    }
+                    .libelle{
+                        width: 39%;
+                    }
+                }
+                .items-row{
+                    background-color: white;
+                    color: black;
+                    margin: 1px;
+                }
+            }
+            .somme{
+                text-align: end;
+                margin-bottom: 20px;
+                h5{
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+            .slogan{
+                margin: 20px 0;
+                h5{
+                    text-align: center;
+                }
+            }
+        }
+        
+        .action{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin: 20px 0;
+        }
+    }
+}

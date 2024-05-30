@@ -1,0 +1,20 @@
+$color : #ff2121 ;
+$bg : #020216 ;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background: $bg ; 
+    color: white ;
+    padding: 0 40px;
+}
+
+
+@import './component/navbar.scss';
+@import './component/home.scss';
+@import './component/clients.scss';
+@import './component/stats.scss';
+@import './component/guest.scss';

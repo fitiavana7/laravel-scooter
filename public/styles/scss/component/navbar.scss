@@ -1,0 +1,89 @@
+$color : #ff2121 ;
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 100;
+    background-color: $bg;
+    h3{
+        font-weight: bold;
+        color: $color;
+    }
+    .navbar-links{
+        display: flex;
+        .link{
+            color: white;
+            text-decoration: none;
+            margin: 0 4px;
+            padding: 5px 2px;
+        }
+        .link-active{
+            color: $color;
+            border-bottom: 1px solid $color;
+        }
+        .link:hover{
+            border-bottom: 1px solid white;
+        }
+        .drop{
+            display: relative; 
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                background : transparent;
+                margin-left: 10px;
+                h6{
+                    font-weight : bold ;
+                    margin-left: 10px;
+                }
+            }
+            .btn-show{
+                position: absolute ;
+                right: 40px;
+                margin-top: 8px;
+                background: white;
+                border-radius: 10px;
+                width: 150px;
+                display: none;
+                text-transform: lowercase;
+                ul{
+                    padding-top: 12px;
+                    list-style: none;
+
+                    li{
+                        a{
+                            display: block;
+                            padding: 4px ;
+                            text-align: center;
+                            color: $color;
+                            i{
+                                margin-right: 10px;
+                            }
+    
+                        }
+                        a:hover{
+                            text-decoration: none;
+                            color: dimgrey;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.footer{
+    margin-top: 20px;
+    padding: 20px 0;
+    p{
+        text-align: center;
+        font-size: 19px;
+    }
+}
